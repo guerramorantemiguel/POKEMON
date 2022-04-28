@@ -17,3 +17,5 @@ print("— CANTIDAD DE POKEMON --")
 n = id.count() 
 print("Cantidad de pokemon = " + str(n)) 
 
+def calculomedia(type_1):
+  
