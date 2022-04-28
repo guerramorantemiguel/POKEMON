@@ -46,3 +46,10 @@ def calculomedia(type_1):
   t_w = Water.count()  
   media = t_w/n
   print(media)
+  with open('poke_mon.csv') as csvarchivo:
+    entrada = csv.DictReader(csvarchivo)
+    for reg in entrada:
+        print(reg['Fighting'])
+  t_fi = Fighting.count()  
+  media = t_fi/n
+  print(media)
