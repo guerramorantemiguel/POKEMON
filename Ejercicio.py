@@ -25,3 +25,10 @@ def calculomedia(type_1):
   t_g = Grass.count()  
   media = t_g/n
   print(media)
+  with open('poke_mon.csv') as csvarchivo:
+    entrada = csv.DictReader(csvarchivo)
+    for reg in entrada:
+        print(reg['Normal'])
+  t_n = Normal.count()  
+  media = t_n/n
+  print(media)
