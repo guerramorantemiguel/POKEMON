@@ -18,5 +18,10 @@ n = id.count()
 print("Cantidad de pokemon = " + str(n)) 
 
 def calculomedia(type_1):
-  t_1 = type_1.count()  
-   
+  with open('poke_mon.csv') as csvarchivo:
+    entrada = csv.DictReader(csvarchivo)
+    for reg in entrada:
+        print(reg['Grass'])
+  t_g = Grass.count()  
+  media = t_g/n
+  print(media)
