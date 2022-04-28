@@ -53,3 +53,17 @@ def calculomedia(type_1):
   t_fi = Fighting.count()  
   media = t_fi/n
   print(media)
+  with open('poke_mon.csv') as csvarchivo:
+    entrada = csv.DictReader(csvarchivo)
+    for reg in entrada:
+        print(reg['Ground'])
+  t_gr = Ground.count()  
+  media = t_gr/n
+  print(media)
+  with open('poke_mon.csv') as csvarchivo:
+    entrada = csv.DictReader(csvarchivo)
+    for reg in entrada:
+        print(reg['Psychic'])
+  t_psy = Psychic.count()  
+  media = t_psy/n
+  print(media)
