@@ -74,3 +74,12 @@ def calculomedia(type_1):
   t_ro = Rock.count()  
   media = t_ro/n
   print(media)
+  
+  with open('poke_mon.csv') as csvarchivo:
+    entrada = csv.DictReader(csvarchivo)
+    for reg in entrada:
+        print(reg['Electric'])
+  t_elec = Electric.count()  
+  media = t_elec/n
+  print(media)
+  
