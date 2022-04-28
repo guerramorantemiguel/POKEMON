@@ -11,4 +11,9 @@ Attack = list(datos["Attack_Strength"])
 Defense = list(datos["Defensive_Strength"])
 SP_Atk = list(datos["Special_Attack_Strength"])
 SP_Def = list(datos["Special_Defense_Strength"])
-Speed = 
+Speed = list(datos[""])
+
+print("— CANTIDAD DE POKEMON --") 
+n = id.count() 
+print("Cantidad de pokemon = " + str(n)) 
+
