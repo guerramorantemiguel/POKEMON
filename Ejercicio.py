@@ -67,3 +67,10 @@ def calculomedia(type_1):
   t_psy = Psychic.count()  
   media = t_psy/n
   print(media)
+  with open('poke_mon.csv') as csvarchivo:
+    entrada = csv.DictReader(csvarchivo)
+    for reg in entrada:
+        print(reg['Rock'])
+  t_ro = Rock.count()  
+  media = t_ro/n
+  print(media)
